@@ -8,3 +8,6 @@ A Telegram bot that prints daily menus of the restaurants located at Uta (Univer
 * Refactoring code and separating code into modules
 * Working on Git workflow
 * Text effects? (bold, italics etc)
+* Add Fusari and Tentti 
+* Load menus directly from restaurants' sites
+* Make printing its own function 
