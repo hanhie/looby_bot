@@ -13,23 +13,23 @@ const telegram = new TelegramBot(token, { polling: true });
 
 
 telegram.on('message', (message) => {
-
-  console.log(pnaRestaurants);
-
   _.map(pnaRestaurants, (restaurant) => {
-    if (message.text == restaurant.command) {
-      fetchMenu(restaurant.url, restaurant.orderNum)
-      .then((foodsString) => {
-        const reply = `${restaurant.messageTitle}:\n${foodsString}`;
-        telegram.sendMessage(message.chat.id, reply);
-      })
-    }
+  if (message.text == restaurant.command) {
+    fetchMenu(restaurant.url, restaurant.orderNum)
+    .then((foodsString) => {
+    const reply = `${restaurant.messageTitle}:\n${foodsString}`;
+    telegram.sendMessage(message.chat.id, reply);
+    })
+  }
   });
+  if(message.text == '/tentti'){
+  telegram.sendMessage(message.chat.id, 'Ravintola Tentti:\nKaljaa');
+  }
 });
 
 
 telegram.onText(/\/komennot/, (message) => {
-  const commands = 'Käytä seuraavia komentoja:\n/juvenes\n/vegebar\n/cafecampus\n/minerva\n/cafepinni\n/linna';
+  const commands = 'Käytä seuraavia komentoja:\n/juvenes\n/vegebar\n/cafecampus\n/minerva\n/cafepinni\n/linna\n/tentti';
   telegram.sendMessage(message.chat.id, commands);
 })
 
