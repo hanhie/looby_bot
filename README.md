@@ -11,7 +11,8 @@ A Telegram bot that prints daily menus of the restaurants located at Uta (Univer
 - [ ] /listat command which prints out all the menus in one message
 - [ ] Refactoring code and separating code into modules
 - [ ] Working on Git workflow
-- [ ] Add Fusari and Tentti
+- [ ] Add Fusari
+- [x] Add Tentti
 - [ ] Load menus directly from restaurants' sites
 - [x] Make printing its own function
 - [ ] Add opening hours to restaurant titles
