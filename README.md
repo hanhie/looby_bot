@@ -5,6 +5,7 @@ A Telegram bot that prints daily menus of the restaurants located at Uta (Univer
 ## Dev notes
 
 * If you get error 409 on command line while running stop the program over at Heroku - this error does not always occur but stopping the program will resolve it
+* The bot can be found on Telegram under the username @looby_bot
 
 ## Things to improve
 
