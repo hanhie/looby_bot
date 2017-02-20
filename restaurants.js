@@ -12,16 +12,16 @@ exports.pnaRestaurants = [
     messageTitle: 'Yliopiston ravintola (Vegebar)'
   },
   {
-    command: '/minerva',
+    command: '/cafecampus',
     url: 'http://www.juvenes.fi/fi-fi/ravintolatjakahvilat/opiskelijaravintolat/tayp%C3%A4%C3%A4kampus/caf%C3%A9campus.aspx',
     orderNum: 0,
-    messageTitle: 'Amica Minerva'
+    messageTitle: 'Café Campus'
   },
   {
-    command: '/cafecampus',
+    command: '/minerva',
     url: 'http://www.amica.fi/minerva',
     orderNum: 0,
-    messageTitle: 'Café Campus'
+    messageTitle: 'Amica Minerva'
   },
   {
     command: '/cafepinni',
